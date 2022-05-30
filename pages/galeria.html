@@ -19,14 +19,14 @@
     <!-- link animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- vinculo al css  -->
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
 <body>
     <header class="container-header">
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt=""></a>
+                <a class="navbar-brand" href="../index.html"><img src="assets/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -35,23 +35,23 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="pages/biografia.html">BIOGRAFÍA</a>
+                            <a class="nav-link active" aria-current="page" href="biografia.html">BIOGRAFÍA</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle  active" href="pages/galeria.html" id="navbarDropdownMenuLink" role="button"
+                            <a class="nav-link dropdown-toggle  active" href="galeria.html" id="navbarDropdownMenuLink" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 GALERÍA
                             </a>
                             <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="pages/paisaje.html">PAISAJE</a></li>
-                                <li><a class="dropdown-item" href="pages/comercial.html">COMERCIAL</a></li>
-                                <li><a class="dropdown-item" href="pages/deportiva.html">DEPORTIVA</a></li>
+                                <li><a class="dropdown-item" href="paisaje.html">PAISAJE</a></li>
+                                <li><a class="dropdown-item" href="comercial.html">COMERCIAL</a></li>
+                                <li><a class="dropdown-item" href="deportiva.html">DEPORTIVA</a></li>
                             </ul>
                         <li class="nav-item">
-                            <a class="nav-link active" href="pages/shop.html">SHOP</a>
+                            <a class="nav-link active" href="shop.html">SHOP</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active contacto-emergente" href="pages/contacto.html">CONTACTO</a>
+                            <a class="nav-link active" href="contacto.html">CONTACTO</a>
                         </li>
                         </li>
                     </ul>
@@ -59,22 +59,33 @@
             </div>
         </nav>
     </header>
-
     <main>
-        <div class="titulo-inicio ">
-            <div class="translateDesk ">
-                <h1 class="animate__animated animate__flipInX animate__slower">FOTOGRFÍA & FILMMAKING</h1>
-                <h2 class="fraseAA animate__animated animate__flipInX animate__slower">"Lo importante es ver aquello
-                    que resulta invisible para los demas"</h2>
-                <span class="fraseAA animate__animated animate__flipInX animate__slower">ANSEL ADAMS.</span>
+        <section class="container container-main">
+            <div>
+                <h1>GALERÍA</h1>
             </div>
-        </div>
-            <!-- <div class="background">
-                <div><h1>FOTOGRFIA & FILMMAKING</h1>
-                    <p>"Lo importante es ver aquello que resulta invisible para los demas"
-                        <span>ANSEL ADAMS.</span>
-                    </p></div>
-            </div> -->
+            <div class="paisaje">
+                <h2>FOTOGRAFÍA DE PAISAJE</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, totam maiores tempore nemo reprehenderit quam nisi voluptates hic quidem beatae eum asperiores porro expedita quisquam, fuga, nostrum veniam excepturi mollitia repellendus nihil. Adipisci consectetur incidunt dolorum placeat quisquam sunt ea. Iure, explicabo commodi soluta a quis illo. Odio, rem cupiditate.</p>
+                <span><a href="paisaje.html"></a></span>
+            </div>
+            <div class="comercial">
+                <h3>FOTOGRAFÍA COMERCIAL</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ipsam fuga incidunt assumenda perspiciatis voluptas, debitis iure amet doloribus odit mollitia, explicabo minus alias ut. Odio, maxime labore explicabo perferendis, aut doloribus, culpa optio temporibus praesentium quisquam iure. Ut omnis assumenda expedita debitis animi illo natus excepturi provident cumque repudiandae.
+                </p>
+                <span><a href="comercial.html"></a></span>
+            </div>
+            <div class="deportiva">
+                <h4>FOTOGRAFÍA DEPORTIVA</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum consequuntur, repellendus perferendis nihil, consectetur dignissimos nobis iure odio dolore optio adipisci voluptatem at asperiores commodi nulla quia. Magnam aut veritatis repellendus incidunt nihil doloribus quas, reiciendis soluta voluptatibus quam velit architecto. Dignissimos accusantium nemo fuga neque reiciendis quos unde enim.</p>
+                <span><a href="deportiva.html"></a></span>
+            </div>
+        </section>
+        <section class="videos">
+            <div>
+                <h5>AUDIOVISUALES</h5>
+            </div>
+        </section>
     </main>
     <footer class="container-footer">
         <section>
@@ -94,5 +105,4 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
