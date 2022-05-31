@@ -127,21 +127,33 @@ main .container-proyectos {
   padding: 1.5em;
   background: #414141;
   padding: 3em; }
-  main .container-proyectos div {
+  main .container-proyectos .titulo-mis-proyectos {
     align-items: center;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-color: #403022;
     border-radius: 1.2em;
     padding: 1em; }
-    main .container-proyectos div h2 {
-      color: #272727;
+    main .container-proyectos .titulo-mis-proyectos h2 {
+      color: #FDF9F0;
       letter-spacing: 2px;
       font-size: 3em;
       text-align: center;
       font-weight: 200;
       font-family: 'Poppins', sans-serif;
       transition: transform 2s; }
-      main .container-proyectos div h2:hover {
+      main .container-proyectos .titulo-mis-proyectos h2:hover {
         transform: translateX(12em); }
+  main .container-proyectos .texto-mis-proyectos {
+    align-items: center;
+    background: #FDF9F0;
+    border-radius: 1.2em;
+    padding: 1em; }
+    main .container-proyectos .texto-mis-proyectos p {
+      color: #414141;
+      letter-spacing: 2px;
+      font-size: 1em;
+      text-align: justify;
+      font-weight: 200;
+      font-family: 'Roboto Flex', sans-serif; }
 
 main .container-aside-newsletter {
   display: grid;
@@ -213,7 +225,16 @@ main .container-aside-newsletter {
         font-size: 3em; }
       main .container-aside-newsletter .newsletter div p {
         text-align: left;
+        padding: 0.2em;
         color: white;
         font-family: 'Roboto Flex', sans-serif;
         font-weight: 100;
         font-size: 1.5em; }
+      main .container-aside-newsletter .newsletter div .inputs-newsletter {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around; }
+        main .container-aside-newsletter .newsletter div .inputs-newsletter .inputs {
+          border-radius: 1.5em;
+          font-size: 1.5em;
+          padding: 0.2em; }
