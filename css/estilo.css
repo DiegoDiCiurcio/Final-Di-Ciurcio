@@ -76,21 +76,33 @@ main .sobre-mi-container {
   padding: 1.5em;
   background: #414141;
   padding: 3em; }
-  main .sobre-mi-container div {
+  main .sobre-mi-container .titulo-sobre-mi {
     align-items: center;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-color: #403022;
     border-radius: 1.2em;
     padding: 1em; }
-  main .sobre-mi-container h1 {
-    color: #272727;
-    letter-spacing: 2px;
-    font-size: 3em;
-    text-align: center;
-    font-weight: 200;
-    font-family: 'Poppins', sans-serif;
-    transition: transform 2s; }
-    main .sobre-mi-container h1:hover {
-      transform: translateX(12em); }
+    main .sobre-mi-container .titulo-sobre-mi h1 {
+      color: #FDF9F0;
+      letter-spacing: 2px;
+      font-size: 3em;
+      text-align: center;
+      font-weight: 200;
+      font-family: 'Poppins', sans-serif;
+      transition: transform 2s; }
+      main .sobre-mi-container .titulo-sobre-mi h1:hover {
+        transform: translateX(12em); }
+  main .sobre-mi-container .texto-sobre-mi {
+    align-items: center;
+    background: #FDF9F0;
+    border-radius: 1.2em;
+    padding: 1em; }
+    main .sobre-mi-container .texto-sobre-mi p {
+      color: #414141;
+      letter-spacing: 2px;
+      font-size: 1em;
+      text-align: justify;
+      font-weight: 200;
+      font-family: 'Roboto Flex', sans-serif; }
 
 main .carrusel-fotos-biografia {
   background-color: #292929;

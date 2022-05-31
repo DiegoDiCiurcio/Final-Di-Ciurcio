@@ -4,24 +4,40 @@ main {
         background: rgb(65, 65, 65);
         padding: 3em;
 
-        div {
+        .titulo-sobre-mi {
             align-items: center;
-            background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%, );
+            background-color: #403022;
             border-radius: 1.2em;
             padding: 1em;
+
+            h1 {
+                color: #FDF9F0;
+                letter-spacing: 2px;
+                font-size: 3em;
+                text-align: center;
+                font-weight: 200;
+                font-family: 'Poppins', sans-serif;
+                transition: transform 2s;
+
+                &:hover {
+                    transform: translateX(12em);
+                }
+            }
         }
 
-        h1 {
-            color: rgb(39, 39, 39);
-            letter-spacing: 2px;
-            font-size: 3em;
-            text-align: center;
-            font-weight: 200;
-            font-family: 'Poppins', sans-serif;
-            transition: transform 2s;
+        .texto-sobre-mi {
+            align-items: center;
+            background: #FDF9F0;
+            border-radius: 1.2em;
+            padding: 1em;
 
-            &:hover {
-                transform: translateX(12em);
+            p {
+                color: rgb(65, 65, 65);
+                letter-spacing: 2px;
+                font-size: 1em;
+                text-align: justify;
+                font-weight: 200;
+                font-family: 'Roboto Flex', sans-serif;
             }
 
         }
@@ -33,20 +49,21 @@ main {
         width: 100vw;
         align-content: center;
 
-        .container-carrusel{
+        .container-carrusel {
             padding: 6em;
             align-items: center;
             text-align: center;
-            .tamaño-carrusel{
+
+            .tamaño-carrusel {
                 margin: auto;
                 height: 80vh;
                 width: 80vw;
-                
-                img{
+
+                img {
                     object-fit: cover;
                     width: 90%;
                     height: 90%;
-                    border-radius: 5px; 
+                    border-radius: 5px;
 
                 }
             }
@@ -85,19 +102,23 @@ main {
         grid-template-columns: repeat(2, 50%);
         gap: 0.2em;
         margin-top: 0.5em;
-        .carrusel-sponsor { 
+
+        .carrusel-sponsor {
             background-color: rgb(77, 77, 77);
             border-radius: 2em;
             text-align: center;
             align-content: center;
             overflow: hidden;
-            h4{
+
+            h4 {
                 text-align: left;
                 padding: 0.2em;
                 color: white;
                 font-family: 'Roboto Flex', sans-serif;
                 font-weight: 300;
-                font-size: 3em;}
+                font-size: 3em;
+            }
+
             // body {
             //     align-items: center;
             //     background: #E3E3E3;
@@ -105,30 +126,35 @@ main {
             //     height: 100vh;
             //     justify-content: center;
             // }
-            
+
             @mixin white-gradient {
-                background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+                background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
             }
-            
+
             $animationSpeed: 10s;
-            
+
             // Animation
             @keyframes scroll {
-                0% { transform: translateX(0); }
-                100% { transform: translateX(calc(-250px * 7))}
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(calc(-250px * 7))
+                }
             }
-            
-            
+
+
             // Styling
             .slider {
                 background: white;
                 box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
                 height: 100px;
                 margin: auto;
-                overflow:hidden;
+                overflow: hidden;
                 position: relative;
                 width: inherit;
-                
+
                 &::before,
                 &::after {
                     @include white-gradient;
@@ -138,24 +164,24 @@ main {
                     width: 200px;
                     z-index: 2;
                 }
-                
+
                 &::after {
                     right: 0;
                     top: 0;
                     transform: rotateZ(180deg);
                 }
-            
+
                 &::before {
                     left: 0;
                     top: 0;
                 }
-                
+
                 .slide-track {
                     animation: scroll $animationSpeed linear infinite;
                     display: flex;
                     width: calc(250px * 14);
                 }
-                
+
                 .slide {
                     height: 100px;
                     width: 250px;
@@ -164,7 +190,7 @@ main {
         }
 
         .newsletter {
-            background: linear-gradient(to right, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at right center, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.40) 120%) #989898;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at right center, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
             display: flex;
             flex-flow: column wrap;
             border-radius: 2em;
@@ -173,7 +199,8 @@ main {
             div {
                 align-content: center;
                 padding: 0.5em;
-                h3{
+
+                h3 {
                     text-align: left;
                     padding: 0.2em;
                     color: white;
@@ -181,7 +208,8 @@ main {
                     font-weight: 300;
                     font-size: 3em;
                 }
-                p{
+
+                p {
                     text-align: left;
                     color: white;
                     font-family: 'Roboto Flex', sans-serif;
