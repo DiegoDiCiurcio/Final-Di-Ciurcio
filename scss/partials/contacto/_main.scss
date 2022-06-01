@@ -1,0 +1,147 @@
+.formulario {
+    width: 100vw;
+    height: 100vh;
+
+    .contacto {
+        background: rgb(65, 65, 65);
+        border-radius: 2em;
+        margin: 5em auto 5em auto;
+        width: 75vw;
+        height: 80vh;
+        display: grid;
+        padding: 2em;
+        grid-template-columns: 2fr 1fr;
+        // grid-template-rows: repeat(3,auto);
+        grid-template-areas: "title title title"
+            "forms forms datos-propios"
+            "forms forms datos-propios";
+        gap: 1em;
+
+        h1 {
+            grid-area: title;
+            text-align: center;
+            font-size: 3em;
+            color: antiquewhite;
+            letter-spacing: 3px;
+            line-height: 20px;
+            padding: 1em;
+            border-bottom: 2px solid#FC9C73;
+        }
+
+        .forms {
+            grid-area: forms;
+            display: grid;
+            grid-template-areas: "name1 name2"
+                "direction1 direction2"
+                "mail mail"
+                "text text"
+                "enviar enviar";
+            gap: 0.5em;
+
+            .name1 {
+                grid-area: name1;
+            }
+
+            .name2 {
+                grid-area: name2;
+            }
+
+            .email {
+                grid-area: mail;
+            }
+
+            .direccion1 {
+                grid-area: direction1;
+            }
+
+            .direccion2 {
+                grid-area: direction2;
+            }
+
+            textarea {
+                grid-area: text;
+                border-radius: 0.3em;
+                letter-spacing: 2px;
+                line-height: 15px;
+                padding: 1.5em;
+                color: black;
+                border: 2px solid#FC9C73;
+            }
+
+            input {
+                border-radius: 0.3em;
+                letter-spacing: 2px;
+                line-height: 15px;
+                padding: 1.5em;
+                border: 2px solid#FC9C73;
+            }
+
+            button {
+                grid-area: enviar;
+                border: 1px solid#423e3d;
+                border-radius: 0.3em;
+                letter-spacing: 2px;
+                line-height: 10px;
+                padding: 1em;
+                &:hover{
+                    color: #FC9C73;;
+                    background-color: #242322;
+                }
+            }
+        }
+
+        .datos-propios {
+            grid-area: datos-propios;
+            background-image: url(../assets/logo.png);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: 95%;
+            padding: 1em;
+
+            .datos {
+                font-size: 1.4em;
+                font-family: 'Roboto Flex', sans-serif;
+                color: #FDF9F0;
+                height: 100%;
+                .gmail{
+                    &:hover{
+                        color: #fbbc05;
+                    }
+                }
+                .wpp{
+                    &:hover{
+                        color: green;
+                    }
+                }
+            }
+
+            .redes {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+
+                a {
+                    font-size: 1.4em;
+                    text-decoration: none;
+                    color: #FDF9F0;
+                }
+
+                    .a-instagram:hover {
+                        color: #BF36A8;
+                    }
+
+                    .a-facebook:hover {
+                        color: rgb(21, 111, 190);
+                    }
+
+                    .a-linked:hover {
+                        color: rgb(0, 0, 0);
+                    }
+
+                    .a-adobe:hover {
+                        color: rgb(255, 0, 0);
+                    }
+            }
+        }
+    }
+}

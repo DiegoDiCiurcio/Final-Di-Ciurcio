@@ -117,7 +117,7 @@ main {
     .container-aside-newsletter {
         display: grid;
         grid-template-columns: repeat(2, 50%);
-        gap: 0.2em;
+        gap: 1em;
         margin-top: 0.5em;
 
         .carrusel-sponsor {
@@ -136,42 +136,29 @@ main {
                 font-size: 3em;
             }
 
-            // body {
-            //     align-items: center;
-            //     background: #E3E3E3;
-            //     display: flex;
-            //     height: 100vh;
-            //     justify-content: center;
-            // }
-
             @mixin white-gradient {
-                background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+                background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
             }
-
-            $animationSpeed: 10s;
-
+            
+            $animationSpeed: 40s;
+            
             // Animation
             @keyframes scroll {
-                0% {
-                    transform: translateX(0);
-                }
-
-                100% {
-                    transform: translateX(calc(-250px * 7))
-                }
+                0% { transform: translateX(0); }
+                100% { transform: translateX(calc(-250px * 7))}
             }
-
-
+            
+            
             // Styling
             .slider {
                 background: white;
                 box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
                 height: 100px;
                 margin: auto;
-                overflow: hidden;
+                overflow:hidden;
                 position: relative;
-                width: inherit;
-
+                width: 960px;
+                
                 &::before,
                 &::after {
                     @include white-gradient;
@@ -181,24 +168,24 @@ main {
                     width: 200px;
                     z-index: 2;
                 }
-
+                
                 &::after {
                     right: 0;
                     top: 0;
                     transform: rotateZ(180deg);
                 }
-
+            
                 &::before {
                     left: 0;
                     top: 0;
                 }
-
+                
                 .slide-track {
                     animation: scroll $animationSpeed linear infinite;
                     display: flex;
                     width: calc(250px * 14);
                 }
-
+                
                 .slide {
                     height: 100px;
                     width: 250px;
@@ -220,7 +207,7 @@ main {
                 h3 {
                     text-align: left;
                     padding: 0.2em;
-                    color: white;
+                    color: #FDF9F0;
                     font-family: 'Roboto Flex', sans-serif;
                     font-weight: 300;
                     font-size: 3em;
@@ -244,10 +231,16 @@ main {
                         font-size: 1.5em;
                         padding: 0.2em;
                     }
-                    .checkbox{
+                    .button-newsletter{
+                        border-radius: 1.5em;
+                        font-size: 1.5em;
+                        padding: 0.2em;
+                        button{
+                            border-radius: 1.5em;
+                        }
+                    }
                     }
                 }
             }
         }
     }
-}

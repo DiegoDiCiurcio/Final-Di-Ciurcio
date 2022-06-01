@@ -51,34 +51,71 @@
                             <a class="nav-link active" href="shop.html">SHOP</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="contacto.html">CONTACTO</a>
+                            <a class="nav-link active contacto-emergente" href="contacto.html">CONTACTO</a>
                         </li>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        </header>
     <main>
-        <section class="container container-main">
+        <section class="caja-contenedora container-main">
             <div class="cuadros shop">
-                <h1>CUADROS E IMPRESIONES</h1>
-            </div>
-            <div class="shop">
-                <h2>CURSOS Y WORKSHOPS</h2>
-            </div>
-            <div class="shop">
-                <h3>PRESETS</h3>
-            </div>
-            <section class="sponsors">
-                <div>
-                    <!-- que tenga un estilo chiquito de carrusel -->
-                    <h4>DESCUENTOS</h4>
-                    <p>Con mi codigo DiegoDC podras acceder a descuentos en:</p>
-                    <!-- <div class="container-sponsor"><a href="#"><img src="../assets/patagonia.png" alt=""></a></div>
-                    <div class="container-sponsor"><a href="#"><img src="../assets/samsung.png" alt=""></a></div>
-                    <div class="container-sponsor"><a href="#"><img src="../assets/sony.png" alt=""></a></div> -->
+                <h1>CUADROS</h1>
+                <div class="form">
+                <form action="seleccionar-tamaño">
+                    <select name="tamaño" id="" class="tamaño">
+                        <option value="Seleccione">Elija el tamaño de impresión.</option>
+                        <option value="XL">130x100</option>
+                        <option value="L">100X70</option>
+                        <option value="M">70x50</option>
+                        <option value="S">50x30</option>
+                        <option value="SquareL">70x70</option>
+                        <option value="SquareM">50x50</option>
+                        <option value="SquareS">30x30</option>
+                    </select>
+                    </form>
+                    <form action="seleccionar-papel">
+                    <select name="papel" id="">
+                        <option value="Seleccione">Seleccione el tipo de papel.</option>
+                        <option value="mate">Mate Fotográfico</option>
+                        <option value="brillo">Brillo Fotográfico</option>
+                        <option value="lustre">Lustre Fotográfico</option>
+                        <option value="fine-art">Fine-Art Fotográfico</option>
+                    </select>
+                    </form>
+                    <form action="seleccionar-cuadro">
+                    <select name="cuadro" id="">
+                        <option value="Seleccione">Elija el tipo de marco.</option>
+                        <option value="madera-nogal">Madera de Nogal con vidrio</option>
+                        <option value="madera-pino">Madera de Pino con vidrio</option>
+                        <option value="melamina">Melamina negra con vidrio</option>
+                    </select>
+                </form>
                 </div>
-            </section>
+                <div class="button"><button>Realizar pedido.</button></div>
+            </div>
+            <div class="shop workshop">
+                <h2>WORKSHOPS</h2>
+                <p>Cursos On-line intensivos, salidas prácticas, edicion y revelado.</p>
+                <a href="#">Quiero Inscribirme</a>
+            </div>
+            <div class="shop presets">
+                <h3>PRESETS</h3>
+                <p>Dale vida y aspectos a tus imagenes y videos con solo un click.</p>
+                <a href="#">¡Los quiero!</a>
+            </div>
+            <!-- <section >
+                <div class="descuentos">
+                    <h4>¡CON MI CODIGO "DIEGODC", OBTENÉS UN 15% DE DESCUENTO!</h4>
+                <div class="img-descuentos">
+                    <a href="#"><img src="../assets/patagonia.png" alt=""></a>
+                    <a href="#"><img src="../assets/samsung.png" alt=""></a>
+                    <a href="#"><img src="../assets/sony.png" alt=""></a>
+                </div>
+                </div>
+            </section> -->
         </section>
     </main>
     <footer class="container-footer">
@@ -87,7 +124,7 @@
                 <a href="#" class="a-instagram"><i class='bx bxl-instagram'></i></a>
                 <a href="#" class="a-facebook"><i class='bx bxl-facebook'></i></a>
                 <a href="#" class="a-linked"><i class='bx bxl-linkedin'></i></a>
-                <a href="#" class="a-adobe"><i class='bx bxl-adobe'></i></a>
+                <a href="#" class="a-adobe"><i class='bx bxl-youtube'></i></a>
             </div>
         </section>
     </footer>

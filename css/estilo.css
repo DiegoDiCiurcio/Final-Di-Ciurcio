@@ -14,6 +14,29 @@ header {
       border: solid 1px darkgrey;
       background-color: darkgrey; }
 
+footer {
+  height: 5em;
+  width: 100vw;
+  background-color: #FDF9F0; }
+  footer section div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center; }
+    footer section div a {
+      text-decoration: none;
+      font-size: 2.7em;
+      color: #353535;
+      padding: 0.3em; }
+    footer section div .a-instagram:hover {
+      color: #BF36A8; }
+    footer section div .a-facebook:hover {
+      color: #156fbe; }
+    footer section div .a-linked:hover {
+      color: black; }
+    footer section div .a-adobe:hover {
+      color: red; }
+
 main .titulo-inicio {
   background-image: url(../assets/bg-inicio.jpg);
   background-size: cover;
@@ -47,30 +70,6 @@ main .titulo-inicio {
       color: #080808;
       font-size: 1em;
       text-align: center; }
-
-footer {
-  height: 5em;
-  width: 100vw;
-  background-color: #FDF9F0;
-  border-radius: 5px; }
-  footer section div {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: center; }
-    footer section div a {
-      text-decoration: none;
-      font-size: 2.7em;
-      color: #353535;
-      padding: 0.3em; }
-    footer section div .a-instagram:hover {
-      color: #BF36A8; }
-    footer section div .a-facebook:hover {
-      color: #156fbe; }
-    footer section div .a-linked:hover {
-      color: black; }
-    footer section div .a-adobe:hover {
-      color: red; }
 
 main .sobre-mi-container {
   padding: 1.5em;
@@ -158,7 +157,7 @@ main .container-proyectos {
 main .container-aside-newsletter {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  gap: 0.2em;
+  gap: 1em;
   margin-top: 0.5em; }
   main .container-aside-newsletter .carrusel-sponsor {
     background-color: #4d4d4d;
@@ -186,7 +185,7 @@ main .container-aside-newsletter {
       margin: auto;
       overflow: hidden;
       position: relative;
-      width: inherit; }
+      width: 960px; }
       main .container-aside-newsletter .carrusel-sponsor .slider::before, main .container-aside-newsletter .carrusel-sponsor .slider::after {
         background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
         content: "";
@@ -202,7 +201,7 @@ main .container-aside-newsletter {
         left: 0;
         top: 0; }
       main .container-aside-newsletter .carrusel-sponsor .slider .slide-track {
-        animation: scroll 10s linear infinite;
+        animation: scroll 40s linear infinite;
         display: flex;
         width: calc(250px * 14); }
       main .container-aside-newsletter .carrusel-sponsor .slider .slide {
@@ -219,7 +218,7 @@ main .container-aside-newsletter {
       main .container-aside-newsletter .newsletter div h3 {
         text-align: left;
         padding: 0.2em;
-        color: white;
+        color: #FDF9F0;
         font-family: 'Roboto Flex', sans-serif;
         font-weight: 300;
         font-size: 3em; }
@@ -238,3 +237,192 @@ main .container-aside-newsletter {
           border-radius: 1.5em;
           font-size: 1.5em;
           padding: 0.2em; }
+        main .container-aside-newsletter .newsletter div .inputs-newsletter .button-newsletter {
+          border-radius: 1.5em;
+          font-size: 1.5em;
+          padding: 0.2em; }
+          main .container-aside-newsletter .newsletter div .inputs-newsletter .button-newsletter button {
+            border-radius: 1.5em; }
+
+main {
+  margin-left: -110; }
+
+.caja-contenedora {
+  display: grid;
+  grid-template-rows: repeat(3, 20em); }
+  .caja-contenedora .shop {
+    align-items: flex-start;
+    margin-left: 0px;
+    border-radius: 20px;
+    background: #FDF9F0;
+    margin: 0.7em;
+    padding: 1.2em; }
+    .caja-contenedora .shop h1 {
+      font-size: 3em;
+      color: #D99B66;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700; }
+    .caja-contenedora .shop h2 {
+      font-size: 3em;
+      color: #414141;
+      font-weight: 700;
+      font-family: 'Poppins', sans-serif; }
+    .caja-contenedora .shop h3 {
+      font-size: 3em;
+      color: #414141;
+      font-weight: 700;
+      font-family: 'Poppins', sans-serif; }
+    .caja-contenedora .shop .form {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between; }
+      .caja-contenedora .shop .form select {
+        border-radius: 0.5em;
+        font-size: 1.5em;
+        padding: 0.5em;
+        background-color: #414141;
+        font-family: 'Roboto Flex', sans-serif;
+        color: #FDF9F0; }
+    .caja-contenedora .shop .button {
+      margin-top: 1.5em;
+      text-align: center; }
+      .caja-contenedora .shop .button button {
+        border-radius: 0.5em;
+        font-size: 1em;
+        padding: 0.5em;
+        background-color: #414141;
+        font-family: 'Roboto Flex', sans-serif;
+        color: #FDF9F0;
+        border: none; }
+  .caja-contenedora .cuadros {
+    background-image: url(../assets/bg-cuadros.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center; }
+  .caja-contenedora .workshop {
+    background-image: url(../assets/bg-workshop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center; }
+    .caja-contenedora .workshop p {
+      font-family: 'Roboto Flex', sans-serif;
+      color: #FDF9F0;
+      font-size: 2em; }
+    .caja-contenedora .workshop a {
+      text-decoration: none;
+      background-color: #5f4f40;
+      border-radius: 1.2em;
+      padding: 0.5em;
+      font-size: 1.6em;
+      color: #FDF9F0; }
+  .caja-contenedora .presets {
+    background-image: url(../assets/bg-workshop2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -2.5em; }
+    .caja-contenedora .presets p {
+      font-family: 'Roboto Flex', sans-serif;
+      color: #414141;
+      font-size: 2em; }
+    .caja-contenedora .presets a {
+      text-decoration: none;
+      background-color: #5f4f40;
+      border-radius: 1.2em;
+      padding: 0.5em;
+      font-size: 1.6em;
+      color: #FDF9F0; }
+
+.formulario {
+  width: 100vw;
+  height: 100vh; }
+  .formulario .contacto {
+    background: #414141;
+    border-radius: 2em;
+    margin: 5em auto 5em auto;
+    width: 75vw;
+    height: 80vh;
+    display: grid;
+    padding: 2em;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "title title title" "forms forms datos-propios" "forms forms datos-propios";
+    gap: 1em; }
+    .formulario .contacto h1 {
+      grid-area: title;
+      text-align: center;
+      font-size: 3em;
+      color: antiquewhite;
+      letter-spacing: 3px;
+      line-height: 20px;
+      padding: 1em;
+      border-bottom: 2px solid #FC9C73; }
+    .formulario .contacto .forms {
+      grid-area: forms;
+      display: grid;
+      grid-template-areas: "name1 name2" "direction1 direction2" "mail mail" "text text" "enviar enviar";
+      gap: 0.5em; }
+      .formulario .contacto .forms .name1 {
+        grid-area: name1; }
+      .formulario .contacto .forms .name2 {
+        grid-area: name2; }
+      .formulario .contacto .forms .email {
+        grid-area: mail; }
+      .formulario .contacto .forms .direccion1 {
+        grid-area: direction1; }
+      .formulario .contacto .forms .direccion2 {
+        grid-area: direction2; }
+      .formulario .contacto .forms textarea {
+        grid-area: text;
+        border-radius: 0.3em;
+        letter-spacing: 2px;
+        line-height: 15px;
+        padding: 1.5em;
+        color: black;
+        border: 2px solid #FC9C73; }
+      .formulario .contacto .forms input {
+        border-radius: 0.3em;
+        letter-spacing: 2px;
+        line-height: 15px;
+        padding: 1.5em;
+        border: 2px solid #FC9C73; }
+      .formulario .contacto .forms button {
+        grid-area: enviar;
+        border: 1px solid #423e3d;
+        border-radius: 0.3em;
+        letter-spacing: 2px;
+        line-height: 10px;
+        padding: 1em; }
+        .formulario .contacto .forms button:hover {
+          color: #FC9C73;
+          background-color: #242322; }
+    .formulario .contacto .datos-propios {
+      grid-area: datos-propios;
+      background-image: url(../assets/logo.png);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 95%;
+      padding: 1em; }
+      .formulario .contacto .datos-propios .datos {
+        font-size: 1.4em;
+        font-family: 'Roboto Flex', sans-serif;
+        color: #FDF9F0;
+        height: 100%; }
+        .formulario .contacto .datos-propios .datos .gmail:hover {
+          color: #fbbc05; }
+        .formulario .contacto .datos-propios .datos .wpp:hover {
+          color: green; }
+      .formulario .contacto .datos-propios .redes {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between; }
+        .formulario .contacto .datos-propios .redes a {
+          font-size: 1.4em;
+          text-decoration: none;
+          color: #FDF9F0; }
+        .formulario .contacto .datos-propios .redes .a-instagram:hover {
+          color: #BF36A8; }
+        .formulario .contacto .datos-propios .redes .a-facebook:hover {
+          color: #156fbe; }
+        .formulario .contacto .datos-propios .redes .a-linked:hover {
+          color: black; }
+        .formulario .contacto .datos-propios .redes .a-adobe:hover {
+          color: red; }
